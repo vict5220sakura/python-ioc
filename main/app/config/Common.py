@@ -8,7 +8,6 @@ from main.app.framework.IocApi import IocApi
 class Common(IocApi):
     serverPort = None
     env = "dev"
-    javaUrl = ""
     deviceCpu = None
     deviceGpu = None
 
@@ -32,7 +31,6 @@ class Common(IocApi):
             data = yaml.safe_load(file)
 
         Common.serverPort = data["server"]["port"]
-        Common.javaUrl = data["java"]["url"]
 
         Common.deviceCpu = torch.device("cpu")
         Common.deviceGpu = torch.device("cuda")
