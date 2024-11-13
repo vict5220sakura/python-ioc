@@ -1,0 +1,7 @@
+services:
+  Test1Service:
+    class: main.app.service.Test1Service.Test1Service
+  Common:
+    class: main.app.config.Common.Common
+  TestController:
+    class: main.app.controller.TestController.TestController
