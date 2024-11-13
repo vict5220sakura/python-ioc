@@ -7,10 +7,9 @@ from PIL import Image
 
 class TestController(IocApi):
     api = Blueprint('api', __name__)
-    testJavaApi = None
 
     def autowired(self):
-        TestController.testJavaApi = IocUtils.getBean("TestJavaApi")
+        pass
 
     def postConstruct(self):
         pass
