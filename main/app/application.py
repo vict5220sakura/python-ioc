@@ -1,4 +1,10 @@
 import os
+import sys
+# 获取当前工作目录
+current_working_directory = os.getcwd()
+# 打印输出到控制台
+print("当前工作目录: {}".format(current_working_directory))
+sys.path.append(current_working_directory)
 
 from flask import Flask
 
