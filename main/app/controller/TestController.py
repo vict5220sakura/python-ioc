@@ -1,9 +1,6 @@
 from flask import Blueprint
 
 from main.app.framework.IocApi import IocApi
-from main.app.framework.IocUtils import IocUtils
-
-from PIL import Image
 
 class TestController(IocApi):
     api = Blueprint('api', __name__)
